@@ -8,6 +8,7 @@ from metodos.intepolacion_Herminte import intepolacion_Herminte
 from metodos.Interpolacion_Lagrange import Interpolacion_Lagrange
 from metodos.FuncionLineal import FuncionLineal
 from metodos.Interpolacion_Segmentada import Interpolacion_Segmentada
+from metodos.regresion_polinomial import regresion_polinomial
 class Menu:
      def menu(self):
           """INSTANCIAS """
@@ -21,9 +22,10 @@ class Menu:
           instance_Interpolacion_Segmentada= Interpolacion_Segmentada()
           instance_intepolacion_Herminte = intepolacion_Herminte()
           instance_FuncionLineal =FuncionLineal()
+          instance_regresion_polinomial = regresion_polinomial()
       
           """ respuesta  =input("HACIA ATRAS(1)") """
-          respuesta = "7"
+          respuesta = "11"
           if respuesta == "1":
            instance_hacia_adelante.hacia_adelante()
           if respuesta == "2":
@@ -44,5 +46,10 @@ class Menu:
              instance_intepolacion_Herminte.intepolacion_Herminte()
           if respuesta =="10":
               instance_FuncionLineal.FuncionLineal()
+          if respuesta == "11":
+              instance_regresion_polinomial.regresion_polinomial()
+              
+
+             
               
           return
